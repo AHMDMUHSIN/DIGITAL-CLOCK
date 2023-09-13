@@ -1,0 +1,67 @@
+
+#clock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 250px;
+    width:20%;
+    gap: 10px;
+    text-align: center;
+    background: -webkit-linear-gradient(100deg,#feda75   ,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+  padding: 20px 50px;
+  border-radius: 10px;
+  color: aliceblue;
+  box-shadow: rgba(138, 222, 245, 0.24) 0px 3px 8px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 25px 0px;
+  
+  
+}
+#hour{
+    /* background: -webkit-linear-gradient(90deg,#40f5ef,#0082b1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-size: 80px;
+    color: white;
+    
+}
+#minute{
+    /* background: -webkit-linear-gradient(90deg, #ff5e9a,#ffb960); */
+    /* background: -webkit-linear-gradient(90deg, #2407fd,#00bbff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-size: 80px;
+    color: white;
+}
+#seconds{
+    /* background: -webkit-linear-gradient(90deg, #ff5e9a,#ffb960); */
+    /* background: -webkit-linear-gradient(90deg, #634dff,#00bbff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-size: 25px;
+    color: white;
+}
+#ampm{
+    /* background: -webkit-linear-gradient(90deg, #634dff,#5fd4ff);
+    background: -webkit-linear-gradient(90deg,#1e01ff,#00bbff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+    font-size: 21px;
+    color: white;
+}
+span{
+    color: white;
+    font-size: 80px;
+}
+.sub{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    margin-left: 20px;
+}

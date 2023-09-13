@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div id="clock">
+        <span id="hour"></span>
+        <span>:</span>
+        <span id="minute"></span>
+        <div class="sub">
+            <div id="seconds"></div>
+        <div id="ampm"></div>
+        </div>
+       
+        
+    </div>
+
+    <script>
+        function timer(){
+            let dt=new Date();
+            let ampm=dt.getHours()<=12?" AM ":" PM ";
+            let hour=addzero(dt.getHours()%12);
+            let minute=addzero(dt.getMinutes());
+            let seconds=addzero(dt.getSeconds());
+
+            setTimeout(function(){
+                timer();
+                
+            },1000)
+            document.getElementById("hour").innerHTML=hour;
+            document.getElementById("minute").innerHTML=minute;
+            document.getElementById("seconds").innerHTML=seconds;
+            document.getElementById("ampm").innerHTML=ampm;
+
+            
+        }
+        timer();
+
+        function addzero(param){
+            return param<10?"0"+param:param;
+        }
+    </script>
+</body>
+</html>
